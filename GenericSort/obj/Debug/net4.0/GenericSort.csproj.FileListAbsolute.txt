@@ -1,0 +1,9 @@
+C:\Users\HP PC\Desktop\GenericSort\bin\Debug\net4.0\GenericSort.exe.config
+C:\Users\HP PC\Desktop\GenericSort\bin\Debug\net4.0\GenericSort.exe
+C:\Users\HP PC\Desktop\GenericSort\bin\Debug\net4.0\GenericSort.pdb
+C:\Users\HP PC\Desktop\GenericSort\obj\Debug\net4.0\GenericSort.csprojAssemblyReference.cache
+C:\Users\HP PC\Desktop\GenericSort\obj\Debug\net4.0\GenericSort.AssemblyInfoInputs.cache
+C:\Users\HP PC\Desktop\GenericSort\obj\Debug\net4.0\GenericSort.AssemblyInfo.cs
+C:\Users\HP PC\Desktop\GenericSort\obj\Debug\net4.0\GenericSort.csproj.CoreCompileInputs.cache
+C:\Users\HP PC\Desktop\GenericSort\obj\Debug\net4.0\GenericSort.exe
+C:\Users\HP PC\Desktop\GenericSort\obj\Debug\net4.0\GenericSort.pdb

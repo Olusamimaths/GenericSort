@@ -1,0 +1,1655 @@
+id: GenericSort
+language: CSharp
+name:
+  Default: GenericSort
+qualifiedName:
+  Default: GenericSort
+type: Assembly
+modifiers: {}
+items:
+- id: GenericSort
+  commentId: N:GenericSort
+  language: CSharp
+  name:
+    CSharp: GenericSort
+    VB: GenericSort
+  nameWithType:
+    CSharp: GenericSort
+    VB: GenericSort
+  qualifiedName:
+    CSharp: GenericSort
+    VB: GenericSort
+  type: Namespace
+  assemblies:
+  - GenericSort
+  modifiers: {}
+  items:
+  - id: GenericSort.InsertionSort`1
+    commentId: T:GenericSort.InsertionSort`1
+    language: CSharp
+    name:
+      CSharp: InsertionSort<T>
+      VB: InsertionSort(Of T)
+    nameWithType:
+      CSharp: InsertionSort<T>
+      VB: InsertionSort(Of T)
+    qualifiedName:
+      CSharp: GenericSort.InsertionSort<T>
+      VB: GenericSort.InsertionSort(Of T)
+    type: Class
+    assemblies:
+    - GenericSort
+    namespace: GenericSort
+    source:
+      remote:
+        path: C:/Users/HP PC/Desktop/generic-sort-test/GenericSort/InsertionSort.cs
+      id: InsertionSort
+      path: ../InsertionSort.cs
+      startLine: 17
+    summary: "\nInsertionSort Class\nContains method for sorting an array of elements of type T, \nwhere T must implement \n<ul><li>SortSort Operation</li></ul>\n"
+    example: []
+    syntax:
+      content:
+        CSharp: >-
+          public class InsertionSort<T>
+
+              where T : IComparable
+        VB: Public Class InsertionSort(Of T As IComparable)
+      typeParameters:
+      - id: T
+        description: A generic Type that must implement IComparable
+    inheritance:
+    - System.Object
+    inheritedMembers:
+    - System.Object.Equals(System.Object)
+    - System.Object.Equals(System.Object,System.Object)
+    - System.Object.GetHashCode
+    - System.Object.GetType
+    - System.Object.MemberwiseClone
+    - System.Object.ReferenceEquals(System.Object,System.Object)
+    - System.Object.ToString
+    modifiers:
+      CSharp:
+      - public
+      - class
+      VB:
+      - Public
+      - Class
+    items:
+    - id: GenericSort.InsertionSort`1.Sort(`0[])
+      commentId: M:GenericSort.InsertionSort`1.Sort(`0[])
+      language: CSharp
+      name:
+        CSharp: Sort(T[])
+        VB: Sort(T())
+      nameWithType:
+        CSharp: InsertionSort<T>.Sort(T[])
+        VB: InsertionSort(Of T).Sort(T())
+      qualifiedName:
+        CSharp: GenericSort.InsertionSort<T>.Sort(T[])
+        VB: GenericSort.InsertionSort(Of T).Sort(T())
+      type: Method
+      assemblies:
+      - GenericSort
+      namespace: GenericSort
+      source:
+        remote:
+          path: C:/Users/HP PC/Desktop/generic-sort-test/GenericSort/InsertionSort.cs
+        id: Sort
+        path: ../InsertionSort.cs
+        startLine: 23
+      summary: "\nTakes in an unsorted array of type T elements and sorts the array in place\n"
+      example: []
+      syntax:
+        content:
+          CSharp: public static void Sort(T[] arr)
+          VB: Public Shared Sub Sort(arr As T())
+        parameters:
+        - id: arr
+          type: '{T}[]'
+          description: An array of type T elements
+      overload: GenericSort.InsertionSort`1.Sort*
+      modifiers:
+        CSharp:
+        - public
+        - static
+        VB:
+        - Public
+        - Shared
+  - id: GenericSort.Person
+    commentId: T:GenericSort.Person
+    language: CSharp
+    name:
+      CSharp: Person
+      VB: Person
+    nameWithType:
+      CSharp: Person
+      VB: Person
+    qualifiedName:
+      CSharp: GenericSort.Person
+      VB: GenericSort.Person
+    type: Class
+    assemblies:
+    - GenericSort
+    namespace: GenericSort
+    source:
+      remote:
+        path: C:/Users/HP PC/Desktop/generic-sort-test/GenericSort/Person.cs
+      id: Person
+      path: ../Person.cs
+      startLine: 9
+    summary: "\nPerson class\nCreates a person object with following properties\n"
+    example: []
+    syntax:
+      content:
+        CSharp: 'public class Person : IComparable'
+        VB: >-
+          Public Class Person
+
+              Implements IComparable
+    inheritance:
+    - System.Object
+    implements:
+    - System.IComparable
+    inheritedMembers:
+    - System.Object.Equals(System.Object)
+    - System.Object.Equals(System.Object,System.Object)
+    - System.Object.GetHashCode
+    - System.Object.GetType
+    - System.Object.MemberwiseClone
+    - System.Object.ReferenceEquals(System.Object,System.Object)
+    - System.Object.ToString
+    modifiers:
+      CSharp:
+      - public
+      - class
+      VB:
+      - Public
+      - Class
+    items:
+    - id: GenericSort.Person.FirstName
+      commentId: P:GenericSort.Person.FirstName
+      language: CSharp
+      name:
+        CSharp: FirstName
+        VB: FirstName
+      nameWithType:
+        CSharp: Person.FirstName
+        VB: Person.FirstName
+      qualifiedName:
+        CSharp: GenericSort.Person.FirstName
+        VB: GenericSort.Person.FirstName
+      type: Property
+      assemblies:
+      - GenericSort
+      namespace: GenericSort
+      source:
+        remote:
+          path: C:/Users/HP PC/Desktop/generic-sort-test/GenericSort/Person.cs
+        id: FirstName
+        path: ../Person.cs
+        startLine: 17
+      summary: "\nA string representing the firstname of the person\n"
+      example: []
+      syntax:
+        content:
+          CSharp: public string FirstName { get; set; }
+          VB: Public Property FirstName As String
+        parameters: []
+        return:
+          type: System.String
+      overload: GenericSort.Person.FirstName*
+      modifiers:
+        CSharp:
+        - public
+        - get
+        - set
+        VB:
+        - Public
+    - id: GenericSort.Person.LastName
+      commentId: P:GenericSort.Person.LastName
+      language: CSharp
+      name:
+        CSharp: LastName
+        VB: LastName
+      nameWithType:
+        CSharp: Person.LastName
+        VB: Person.LastName
+      qualifiedName:
+        CSharp: GenericSort.Person.LastName
+        VB: GenericSort.Person.LastName
+      type: Property
+      assemblies:
+      - GenericSort
+      namespace: GenericSort
+      source:
+        remote:
+          path: C:/Users/HP PC/Desktop/generic-sort-test/GenericSort/Person.cs
+        id: LastName
+        path: ../Person.cs
+        startLine: 22
+      summary: "\nA string representing the lastname of the person\n"
+      example: []
+      syntax:
+        content:
+          CSharp: public string LastName { get; set; }
+          VB: Public Property LastName As String
+        parameters: []
+        return:
+          type: System.String
+      overload: GenericSort.Person.LastName*
+      modifiers:
+        CSharp:
+        - public
+        - get
+        - set
+        VB:
+        - Public
+    - id: GenericSort.Person.Age
+      commentId: P:GenericSort.Person.Age
+      language: CSharp
+      name:
+        CSharp: Age
+        VB: Age
+      nameWithType:
+        CSharp: Person.Age
+        VB: Person.Age
+      qualifiedName:
+        CSharp: GenericSort.Person.Age
+        VB: GenericSort.Person.Age
+      type: Property
+      assemblies:
+      - GenericSort
+      namespace: GenericSort
+      source:
+        remote:
+          path: C:/Users/HP PC/Desktop/generic-sort-test/GenericSort/Person.cs
+        id: Age
+        path: ../Person.cs
+        startLine: 27
+      summary: "\nAn integer representing the age of the person\n"
+      example: []
+      syntax:
+        content:
+          CSharp: public int Age { get; set; }
+          VB: Public Property Age As Integer
+        parameters: []
+        return:
+          type: System.Int32
+      overload: GenericSort.Person.Age*
+      modifiers:
+        CSharp:
+        - public
+        - get
+        - set
+        VB:
+        - Public
+    - id: GenericSort.Person.Phone
+      commentId: P:GenericSort.Person.Phone
+      language: CSharp
+      name:
+        CSharp: Phone
+        VB: Phone
+      nameWithType:
+        CSharp: Person.Phone
+        VB: Person.Phone
+      qualifiedName:
+        CSharp: GenericSort.Person.Phone
+        VB: GenericSort.Person.Phone
+      type: Property
+      assemblies:
+      - GenericSort
+      namespace: GenericSort
+      source:
+        remote:
+          path: C:/Users/HP PC/Desktop/generic-sort-test/GenericSort/Person.cs
+        id: Phone
+        path: ../Person.cs
+        startLine: 33
+      summary: "\nA string representing the phone number of the person\n"
+      example: []
+      syntax:
+        content:
+          CSharp: public string Phone { get; set; }
+          VB: Public Property Phone As String
+        parameters: []
+        return:
+          type: System.String
+          description: Phone number
+      overload: GenericSort.Person.Phone*
+      modifiers:
+        CSharp:
+        - public
+        - get
+        - set
+        VB:
+        - Public
+    - id: GenericSort.Person.parents
+      commentId: F:GenericSort.Person.parents
+      language: CSharp
+      name:
+        CSharp: parents
+        VB: parents
+      nameWithType:
+        CSharp: Person.parents
+        VB: Person.parents
+      qualifiedName:
+        CSharp: GenericSort.Person.parents
+        VB: GenericSort.Person.parents
+      type: Field
+      assemblies:
+      - GenericSort
+      namespace: GenericSort
+      source:
+        remote:
+          path: C:/Users/HP PC/Desktop/generic-sort-test/GenericSort/Person.cs
+        id: parents
+        path: ../Person.cs
+        startLine: 38
+      summary: "\nHolds the person objects representing the parents of a given person\n"
+      example: []
+      syntax:
+        content:
+          CSharp: public Parents parents
+          VB: Public parents As Parents
+        return:
+          type: GenericSort.Parents
+      modifiers:
+        CSharp:
+        - public
+        VB:
+        - Public
+    - id: GenericSort.Person.#ctor(System.String,System.String,System.Int32)
+      commentId: M:GenericSort.Person.#ctor(System.String,System.String,System.Int32)
+      language: CSharp
+      name:
+        CSharp: Person(String, String, Int32)
+        VB: Person(String, String, Int32)
+      nameWithType:
+        CSharp: Person.Person(String, String, Int32)
+        VB: Person.Person(String, String, Int32)
+      qualifiedName:
+        CSharp: GenericSort.Person.Person(System.String, System.String, System.Int32)
+        VB: GenericSort.Person.Person(System.String, System.String, System.Int32)
+      type: Constructor
+      assemblies:
+      - GenericSort
+      namespace: GenericSort
+      source:
+        remote:
+          path: C:/Users/HP PC/Desktop/generic-sort-test/GenericSort/Person.cs
+        id: .ctor
+        path: ../Person.cs
+        startLine: 46
+      summary: "\nConstructs a new person object\n"
+      example: []
+      syntax:
+        content:
+          CSharp: public Person(string firstName, string lastName, int age)
+          VB: Public Sub New(firstName As String, lastName As String, age As Integer)
+        parameters:
+        - id: firstName
+          type: System.String
+          description: A string
+        - id: lastName
+          type: System.String
+          description: A string
+        - id: age
+          type: System.Int32
+          description: An Integer
+      overload: GenericSort.Person.#ctor*
+      modifiers:
+        CSharp:
+        - public
+        VB:
+        - Public
+    - id: GenericSort.Person.GetFullName
+      commentId: M:GenericSort.Person.GetFullName
+      language: CSharp
+      name:
+        CSharp: GetFullName()
+        VB: GetFullName()
+      nameWithType:
+        CSharp: Person.GetFullName()
+        VB: Person.GetFullName()
+      qualifiedName:
+        CSharp: GenericSort.Person.GetFullName()
+        VB: GenericSort.Person.GetFullName()
+      type: Method
+      assemblies:
+      - GenericSort
+      namespace: GenericSort
+      source:
+        remote:
+          path: C:/Users/HP PC/Desktop/generic-sort-test/GenericSort/Person.cs
+        id: GetFullName
+        path: ../Person.cs
+        startLine: 59
+      summary: "\nComputes the full name of a person\n"
+      example: []
+      syntax:
+        content:
+          CSharp: public string GetFullName()
+          VB: Public Function GetFullName As String
+        return:
+          type: System.String
+          description: The full name of the person
+      overload: GenericSort.Person.GetFullName*
+      modifiers:
+        CSharp:
+        - public
+        VB:
+        - Public
+    - id: GenericSort.Person.GetId
+      commentId: M:GenericSort.Person.GetId
+      language: CSharp
+      name:
+        CSharp: GetId()
+        VB: GetId()
+      nameWithType:
+        CSharp: Person.GetId()
+        VB: Person.GetId()
+      qualifiedName:
+        CSharp: GenericSort.Person.GetId()
+        VB: GenericSort.Person.GetId()
+      type: Method
+      assemblies:
+      - GenericSort
+      namespace: GenericSort
+      source:
+        remote:
+          path: C:/Users/HP PC/Desktop/generic-sort-test/GenericSort/Person.cs
+        id: GetId
+        path: ../Person.cs
+        startLine: 68
+      summary: "\nGets the id of person\n"
+      example: []
+      syntax:
+        content:
+          CSharp: public int GetId()
+          VB: Public Function GetId As Integer
+        return:
+          type: System.Int32
+          description: The id of the person
+      overload: GenericSort.Person.GetId*
+      modifiers:
+        CSharp:
+        - public
+        VB:
+        - Public
+    - id: GenericSort.Person.GetNumberOfPersons
+      commentId: M:GenericSort.Person.GetNumberOfPersons
+      language: CSharp
+      name:
+        CSharp: GetNumberOfPersons()
+        VB: GetNumberOfPersons()
+      nameWithType:
+        CSharp: Person.GetNumberOfPersons()
+        VB: Person.GetNumberOfPersons()
+      qualifiedName:
+        CSharp: GenericSort.Person.GetNumberOfPersons()
+        VB: GenericSort.Person.GetNumberOfPersons()
+      type: Method
+      assemblies:
+      - GenericSort
+      namespace: GenericSort
+      source:
+        remote:
+          path: C:/Users/HP PC/Desktop/generic-sort-test/GenericSort/Person.cs
+        id: GetNumberOfPersons
+        path: ../Person.cs
+        startLine: 77
+      summary: "\nGets the number of person objects that have been created\n"
+      example: []
+      syntax:
+        content:
+          CSharp: public static int GetNumberOfPersons()
+          VB: Public Shared Function GetNumberOfPersons As Integer
+        return:
+          type: System.Int32
+          description: Number of person object create
+      overload: GenericSort.Person.GetNumberOfPersons*
+      modifiers:
+        CSharp:
+        - public
+        - static
+        VB:
+        - Public
+        - Shared
+    - id: GenericSort.Person.AddParents(GenericSort.Person,GenericSort.Person)
+      commentId: M:GenericSort.Person.AddParents(GenericSort.Person,GenericSort.Person)
+      language: CSharp
+      name:
+        CSharp: AddParents(Person, Person)
+        VB: AddParents(Person, Person)
+      nameWithType:
+        CSharp: Person.AddParents(Person, Person)
+        VB: Person.AddParents(Person, Person)
+      qualifiedName:
+        CSharp: GenericSort.Person.AddParents(GenericSort.Person, GenericSort.Person)
+        VB: GenericSort.Person.AddParents(GenericSort.Person, GenericSort.Person)
+      type: Method
+      assemblies:
+      - GenericSort
+      namespace: GenericSort
+      source:
+        remote:
+          path: C:/Users/HP PC/Desktop/generic-sort-test/GenericSort/Person.cs
+        id: AddParents
+        path: ../Person.cs
+        startLine: 87
+      summary: "\nAdds the father and mother object to a person\n"
+      example: []
+      syntax:
+        content:
+          CSharp: public void AddParents(Person father, Person mother)
+          VB: Public Sub AddParents(father As Person, mother As Person)
+        parameters:
+        - id: father
+          type: GenericSort.Person
+          description: 'Person: Representing the father'
+        - id: mother
+          type: GenericSort.Person
+          description: 'Person: Representing the mother'
+      overload: GenericSort.Person.AddParents*
+      modifiers:
+        CSharp:
+        - public
+        VB:
+        - Public
+    - id: GenericSort.Person.GetFathersName
+      commentId: M:GenericSort.Person.GetFathersName
+      language: CSharp
+      name:
+        CSharp: GetFathersName()
+        VB: GetFathersName()
+      nameWithType:
+        CSharp: Person.GetFathersName()
+        VB: Person.GetFathersName()
+      qualifiedName:
+        CSharp: GenericSort.Person.GetFathersName()
+        VB: GenericSort.Person.GetFathersName()
+      type: Method
+      assemblies:
+      - GenericSort
+      namespace: GenericSort
+      source:
+        remote:
+          path: C:/Users/HP PC/Desktop/generic-sort-test/GenericSort/Person.cs
+        id: GetFathersName
+        path: ../Person.cs
+        startLine: 95
+      summary: "\nGets the name of a person&apos;s father\n"
+      example: []
+      syntax:
+        content:
+          CSharp: public string GetFathersName()
+          VB: Public Function GetFathersName As String
+        return:
+          type: System.String
+          description: The father&apos;s name
+      overload: GenericSort.Person.GetFathersName*
+      modifiers:
+        CSharp:
+        - public
+        VB:
+        - Public
+    - id: GenericSort.Person.GetMothersName
+      commentId: M:GenericSort.Person.GetMothersName
+      language: CSharp
+      name:
+        CSharp: GetMothersName()
+        VB: GetMothersName()
+      nameWithType:
+        CSharp: Person.GetMothersName()
+        VB: Person.GetMothersName()
+      qualifiedName:
+        CSharp: GenericSort.Person.GetMothersName()
+        VB: GenericSort.Person.GetMothersName()
+      type: Method
+      assemblies:
+      - GenericSort
+      namespace: GenericSort
+      source:
+        remote:
+          path: C:/Users/HP PC/Desktop/generic-sort-test/GenericSort/Person.cs
+        id: GetMothersName
+        path: ../Person.cs
+        startLine: 104
+      summary: "\nGets the name of a person&apos;s mother\n"
+      example: []
+      syntax:
+        content:
+          CSharp: public string GetMothersName()
+          VB: Public Function GetMothersName As String
+        return:
+          type: System.String
+          description: The mothers&apos;s name
+      overload: GenericSort.Person.GetMothersName*
+      modifiers:
+        CSharp:
+        - public
+        VB:
+        - Public
+    - id: GenericSort.Person.CompareTo(System.Object)
+      commentId: M:GenericSort.Person.CompareTo(System.Object)
+      language: CSharp
+      name:
+        CSharp: CompareTo(Object)
+        VB: CompareTo(Object)
+      nameWithType:
+        CSharp: Person.CompareTo(Object)
+        VB: Person.CompareTo(Object)
+      qualifiedName:
+        CSharp: GenericSort.Person.CompareTo(System.Object)
+        VB: GenericSort.Person.CompareTo(System.Object)
+      type: Method
+      assemblies:
+      - GenericSort
+      namespace: GenericSort
+      source:
+        remote:
+          path: C:/Users/HP PC/Desktop/generic-sort-test/GenericSort/Person.cs
+        id: CompareTo
+        path: ../Person.cs
+        startLine: 112
+      summary: "\nCompares two Person objects by their first name\n"
+      example: []
+      syntax:
+        content:
+          CSharp: public int CompareTo(object obj)
+          VB: Public Function CompareTo(obj As Object) As Integer
+        parameters:
+        - id: obj
+          type: System.Object
+        return:
+          type: System.Int32
+      overload: GenericSort.Person.CompareTo*
+      implements:
+      - System.IComparable.CompareTo(System.Object)
+      modifiers:
+        CSharp:
+        - public
+        VB:
+        - Public
+  - id: GenericSort.Parents
+    commentId: T:GenericSort.Parents
+    language: CSharp
+    name:
+      CSharp: Parents
+      VB: Parents
+    nameWithType:
+      CSharp: Parents
+      VB: Parents
+    qualifiedName:
+      CSharp: GenericSort.Parents
+      VB: GenericSort.Parents
+    type: Struct
+    assemblies:
+    - GenericSort
+    namespace: GenericSort
+    source:
+      remote:
+        path: C:/Users/HP PC/Desktop/generic-sort-test/GenericSort/Person.cs
+      id: Parents
+      path: ../Person.cs
+      startLine: 124
+    summary: "\nParents Struct\nHolds the father and mother object\n"
+    example: []
+    syntax:
+      content:
+        CSharp: public struct Parents
+        VB: Public Structure Parents
+    inheritedMembers:
+    - System.ValueType.Equals(System.Object)
+    - System.ValueType.GetHashCode
+    - System.ValueType.ToString
+    - System.Object.Equals(System.Object,System.Object)
+    - System.Object.GetType
+    - System.Object.ReferenceEquals(System.Object,System.Object)
+    modifiers:
+      CSharp:
+      - public
+      - struct
+      VB:
+      - Public
+      - Structure
+    items:
+    - id: GenericSort.Parents.#ctor(GenericSort.Person,GenericSort.Person)
+      commentId: M:GenericSort.Parents.#ctor(GenericSort.Person,GenericSort.Person)
+      language: CSharp
+      name:
+        CSharp: Parents(Person, Person)
+        VB: Parents(Person, Person)
+      nameWithType:
+        CSharp: Parents.Parents(Person, Person)
+        VB: Parents.Parents(Person, Person)
+      qualifiedName:
+        CSharp: GenericSort.Parents.Parents(GenericSort.Person, GenericSort.Person)
+        VB: GenericSort.Parents.Parents(GenericSort.Person, GenericSort.Person)
+      type: Constructor
+      assemblies:
+      - GenericSort
+      namespace: GenericSort
+      source:
+        remote:
+          path: C:/Users/HP PC/Desktop/generic-sort-test/GenericSort/Person.cs
+        id: .ctor
+        path: ../Person.cs
+        startLine: 131
+      summary: "\nConstructs a parents object\n"
+      example: []
+      syntax:
+        content:
+          CSharp: public Parents(Person father, Person mother)
+          VB: Public Sub New(father As Person, mother As Person)
+        parameters:
+        - id: father
+          type: GenericSort.Person
+          description: A person object representing the father
+        - id: mother
+          type: GenericSort.Person
+          description: A person object representing the mother
+      overload: GenericSort.Parents.#ctor*
+      modifiers:
+        CSharp:
+        - public
+        VB:
+        - Public
+    - id: GenericSort.Parents.Father
+      commentId: P:GenericSort.Parents.Father
+      language: CSharp
+      name:
+        CSharp: Father
+        VB: Father
+      nameWithType:
+        CSharp: Parents.Father
+        VB: Parents.Father
+      qualifiedName:
+        CSharp: GenericSort.Parents.Father
+        VB: GenericSort.Parents.Father
+      type: Property
+      assemblies:
+      - GenericSort
+      namespace: GenericSort
+      source:
+        remote:
+          path: C:/Users/HP PC/Desktop/generic-sort-test/GenericSort/Person.cs
+        id: Father
+        path: ../Person.cs
+        startLine: 141
+      summary: "\nA person object representing the father \n"
+      example: []
+      syntax:
+        content:
+          CSharp: public readonly Person Father { get; }
+          VB: Public ReadOnly Property Father As Person
+        parameters: []
+        return:
+          type: GenericSort.Person
+          description: A person object
+      overload: GenericSort.Parents.Father*
+      modifiers:
+        CSharp:
+        - public
+        - readonly
+        - get
+        VB:
+        - Public
+        - ReadOnly
+    - id: GenericSort.Parents.Mother
+      commentId: P:GenericSort.Parents.Mother
+      language: CSharp
+      name:
+        CSharp: Mother
+        VB: Mother
+      nameWithType:
+        CSharp: Parents.Mother
+        VB: Parents.Mother
+      qualifiedName:
+        CSharp: GenericSort.Parents.Mother
+        VB: GenericSort.Parents.Mother
+      type: Property
+      assemblies:
+      - GenericSort
+      namespace: GenericSort
+      source:
+        remote:
+          path: C:/Users/HP PC/Desktop/generic-sort-test/GenericSort/Person.cs
+        id: Mother
+        path: ../Person.cs
+        startLine: 147
+      summary: "\nA person object representing the mother\n"
+      example: []
+      syntax:
+        content:
+          CSharp: public readonly Person Mother { get; }
+          VB: Public ReadOnly Property Mother As Person
+        parameters: []
+        return:
+          type: GenericSort.Person
+          description: A person object
+      overload: GenericSort.Parents.Mother*
+      modifiers:
+        CSharp:
+        - public
+        - readonly
+        - get
+        VB:
+        - Public
+        - ReadOnly
+references:
+  System:
+    name:
+      CSharp:
+      - name: System
+        nameWithType: System
+        qualifiedName: System
+        isExternal: true
+      VB:
+      - name: System
+        nameWithType: System
+        qualifiedName: System
+    isDefinition: true
+    commentId: N:System
+  System.Object:
+    name:
+      CSharp:
+      - id: System.Object
+        name: Object
+        nameWithType: Object
+        qualifiedName: System.Object
+        isExternal: true
+      VB:
+      - id: System.Object
+        name: Object
+        nameWithType: Object
+        qualifiedName: System.Object
+        isExternal: true
+    isDefinition: true
+    parent: System
+    commentId: T:System.Object
+  System.Object.Equals(System.Object):
+    name:
+      CSharp:
+      - id: System.Object.Equals(System.Object)
+        name: Equals
+        nameWithType: Object.Equals
+        qualifiedName: System.Object.Equals
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - id: System.Object
+        name: Object
+        nameWithType: Object
+        qualifiedName: System.Object
+        isExternal: true
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+      VB:
+      - id: System.Object.Equals(System.Object)
+        name: Equals
+        nameWithType: Object.Equals
+        qualifiedName: System.Object.Equals
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - id: System.Object
+        name: Object
+        nameWithType: Object
+        qualifiedName: System.Object
+        isExternal: true
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: true
+    parent: System.Object
+    commentId: M:System.Object.Equals(System.Object)
+  System.Object.Equals(System.Object,System.Object):
+    name:
+      CSharp:
+      - id: System.Object.Equals(System.Object,System.Object)
+        name: Equals
+        nameWithType: Object.Equals
+        qualifiedName: System.Object.Equals
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - id: System.Object
+        name: Object
+        nameWithType: Object
+        qualifiedName: System.Object
+        isExternal: true
+      - name: ', '
+        nameWithType: ', '
+        qualifiedName: ', '
+      - id: System.Object
+        name: Object
+        nameWithType: Object
+        qualifiedName: System.Object
+        isExternal: true
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+      VB:
+      - id: System.Object.Equals(System.Object,System.Object)
+        name: Equals
+        nameWithType: Object.Equals
+        qualifiedName: System.Object.Equals
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - id: System.Object
+        name: Object
+        nameWithType: Object
+        qualifiedName: System.Object
+        isExternal: true
+      - name: ', '
+        nameWithType: ', '
+        qualifiedName: ', '
+      - id: System.Object
+        name: Object
+        nameWithType: Object
+        qualifiedName: System.Object
+        isExternal: true
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: true
+    parent: System.Object
+    commentId: M:System.Object.Equals(System.Object,System.Object)
+  System.Object.GetHashCode:
+    name:
+      CSharp:
+      - id: System.Object.GetHashCode
+        name: GetHashCode
+        nameWithType: Object.GetHashCode
+        qualifiedName: System.Object.GetHashCode
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+      VB:
+      - id: System.Object.GetHashCode
+        name: GetHashCode
+        nameWithType: Object.GetHashCode
+        qualifiedName: System.Object.GetHashCode
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: true
+    parent: System.Object
+    commentId: M:System.Object.GetHashCode
+  System.Object.GetType:
+    name:
+      CSharp:
+      - id: System.Object.GetType
+        name: GetType
+        nameWithType: Object.GetType
+        qualifiedName: System.Object.GetType
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+      VB:
+      - id: System.Object.GetType
+        name: GetType
+        nameWithType: Object.GetType
+        qualifiedName: System.Object.GetType
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: true
+    parent: System.Object
+    commentId: M:System.Object.GetType
+  System.Object.MemberwiseClone:
+    name:
+      CSharp:
+      - id: System.Object.MemberwiseClone
+        name: MemberwiseClone
+        nameWithType: Object.MemberwiseClone
+        qualifiedName: System.Object.MemberwiseClone
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+      VB:
+      - id: System.Object.MemberwiseClone
+        name: MemberwiseClone
+        nameWithType: Object.MemberwiseClone
+        qualifiedName: System.Object.MemberwiseClone
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: true
+    parent: System.Object
+    commentId: M:System.Object.MemberwiseClone
+  System.Object.ReferenceEquals(System.Object,System.Object):
+    name:
+      CSharp:
+      - id: System.Object.ReferenceEquals(System.Object,System.Object)
+        name: ReferenceEquals
+        nameWithType: Object.ReferenceEquals
+        qualifiedName: System.Object.ReferenceEquals
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - id: System.Object
+        name: Object
+        nameWithType: Object
+        qualifiedName: System.Object
+        isExternal: true
+      - name: ', '
+        nameWithType: ', '
+        qualifiedName: ', '
+      - id: System.Object
+        name: Object
+        nameWithType: Object
+        qualifiedName: System.Object
+        isExternal: true
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+      VB:
+      - id: System.Object.ReferenceEquals(System.Object,System.Object)
+        name: ReferenceEquals
+        nameWithType: Object.ReferenceEquals
+        qualifiedName: System.Object.ReferenceEquals
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - id: System.Object
+        name: Object
+        nameWithType: Object
+        qualifiedName: System.Object
+        isExternal: true
+      - name: ', '
+        nameWithType: ', '
+        qualifiedName: ', '
+      - id: System.Object
+        name: Object
+        nameWithType: Object
+        qualifiedName: System.Object
+        isExternal: true
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: true
+    parent: System.Object
+    commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  System.Object.ToString:
+    name:
+      CSharp:
+      - id: System.Object.ToString
+        name: ToString
+        nameWithType: Object.ToString
+        qualifiedName: System.Object.ToString
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+      VB:
+      - id: System.Object.ToString
+        name: ToString
+        nameWithType: Object.ToString
+        qualifiedName: System.Object.ToString
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: true
+    parent: System.Object
+    commentId: M:System.Object.ToString
+  '{T}[]':
+    name:
+      CSharp:
+      - name: T
+        nameWithType: T
+        qualifiedName: T
+      - name: '[]'
+        nameWithType: '[]'
+        qualifiedName: '[]'
+      VB:
+      - name: T
+        nameWithType: T
+        qualifiedName: T
+      - name: ()
+        nameWithType: ()
+        qualifiedName: ()
+    isDefinition: false
+  GenericSort.InsertionSort`1.Sort*:
+    name:
+      CSharp:
+      - id: GenericSort.InsertionSort`1.Sort*
+        name: Sort
+        nameWithType: InsertionSort<T>.Sort
+        qualifiedName: GenericSort.InsertionSort<T>.Sort
+      VB:
+      - id: GenericSort.InsertionSort`1.Sort*
+        name: Sort
+        nameWithType: InsertionSort(Of T).Sort
+        qualifiedName: GenericSort.InsertionSort(Of T).Sort
+    isDefinition: true
+    commentId: Overload:GenericSort.InsertionSort`1.Sort
+  GenericSort.InsertionSort`1:
+    name:
+      CSharp:
+      - id: GenericSort.InsertionSort`1
+        name: InsertionSort
+        nameWithType: InsertionSort
+        qualifiedName: GenericSort.InsertionSort
+      - name: <
+        nameWithType: <
+        qualifiedName: <
+      - name: T
+        nameWithType: T
+        qualifiedName: T
+      - name: '>'
+        nameWithType: '>'
+        qualifiedName: '>'
+      VB:
+      - id: GenericSort.InsertionSort`1
+        name: InsertionSort
+        nameWithType: InsertionSort
+        qualifiedName: GenericSort.InsertionSort
+      - name: '(Of '
+        nameWithType: '(Of '
+        qualifiedName: '(Of '
+      - name: T
+        nameWithType: T
+        qualifiedName: T
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: true
+    commentId: T:GenericSort.InsertionSort`1
+  System.IComparable:
+    name:
+      CSharp:
+      - id: System.IComparable
+        name: IComparable
+        nameWithType: IComparable
+        qualifiedName: System.IComparable
+        isExternal: true
+      VB:
+      - id: System.IComparable
+        name: IComparable
+        nameWithType: IComparable
+        qualifiedName: System.IComparable
+        isExternal: true
+    isDefinition: true
+    parent: System
+    commentId: T:System.IComparable
+  System.String:
+    name:
+      CSharp:
+      - id: System.String
+        name: String
+        nameWithType: String
+        qualifiedName: System.String
+        isExternal: true
+      VB:
+      - id: System.String
+        name: String
+        nameWithType: String
+        qualifiedName: System.String
+        isExternal: true
+    isDefinition: true
+    parent: System
+    commentId: T:System.String
+  GenericSort.Person.FirstName*:
+    name:
+      CSharp:
+      - id: GenericSort.Person.FirstName*
+        name: FirstName
+        nameWithType: Person.FirstName
+        qualifiedName: GenericSort.Person.FirstName
+      VB:
+      - id: GenericSort.Person.FirstName*
+        name: FirstName
+        nameWithType: Person.FirstName
+        qualifiedName: GenericSort.Person.FirstName
+    isDefinition: true
+    commentId: Overload:GenericSort.Person.FirstName
+  GenericSort.Person.LastName*:
+    name:
+      CSharp:
+      - id: GenericSort.Person.LastName*
+        name: LastName
+        nameWithType: Person.LastName
+        qualifiedName: GenericSort.Person.LastName
+      VB:
+      - id: GenericSort.Person.LastName*
+        name: LastName
+        nameWithType: Person.LastName
+        qualifiedName: GenericSort.Person.LastName
+    isDefinition: true
+    commentId: Overload:GenericSort.Person.LastName
+  System.Int32:
+    name:
+      CSharp:
+      - id: System.Int32
+        name: Int32
+        nameWithType: Int32
+        qualifiedName: System.Int32
+        isExternal: true
+      VB:
+      - id: System.Int32
+        name: Int32
+        nameWithType: Int32
+        qualifiedName: System.Int32
+        isExternal: true
+    isDefinition: true
+    parent: System
+    commentId: T:System.Int32
+  GenericSort.Person.Age*:
+    name:
+      CSharp:
+      - id: GenericSort.Person.Age*
+        name: Age
+        nameWithType: Person.Age
+        qualifiedName: GenericSort.Person.Age
+      VB:
+      - id: GenericSort.Person.Age*
+        name: Age
+        nameWithType: Person.Age
+        qualifiedName: GenericSort.Person.Age
+    isDefinition: true
+    commentId: Overload:GenericSort.Person.Age
+  GenericSort.Person.Phone*:
+    name:
+      CSharp:
+      - id: GenericSort.Person.Phone*
+        name: Phone
+        nameWithType: Person.Phone
+        qualifiedName: GenericSort.Person.Phone
+      VB:
+      - id: GenericSort.Person.Phone*
+        name: Phone
+        nameWithType: Person.Phone
+        qualifiedName: GenericSort.Person.Phone
+    isDefinition: true
+    commentId: Overload:GenericSort.Person.Phone
+  GenericSort:
+    name:
+      CSharp:
+      - name: GenericSort
+        nameWithType: GenericSort
+        qualifiedName: GenericSort
+      VB:
+      - name: GenericSort
+        nameWithType: GenericSort
+        qualifiedName: GenericSort
+    isDefinition: true
+    commentId: N:GenericSort
+  GenericSort.Parents:
+    name:
+      CSharp:
+      - id: GenericSort.Parents
+        name: Parents
+        nameWithType: Parents
+        qualifiedName: GenericSort.Parents
+      VB:
+      - id: GenericSort.Parents
+        name: Parents
+        nameWithType: Parents
+        qualifiedName: GenericSort.Parents
+    isDefinition: true
+    parent: GenericSort
+    commentId: T:GenericSort.Parents
+  GenericSort.Person.#ctor*:
+    name:
+      CSharp:
+      - id: GenericSort.Person.#ctor*
+        name: Person
+        nameWithType: Person.Person
+        qualifiedName: GenericSort.Person.Person
+      VB:
+      - id: GenericSort.Person.#ctor*
+        name: Person
+        nameWithType: Person.Person
+        qualifiedName: GenericSort.Person.Person
+    isDefinition: true
+    commentId: Overload:GenericSort.Person.#ctor
+  GenericSort.Person.GetFullName*:
+    name:
+      CSharp:
+      - id: GenericSort.Person.GetFullName*
+        name: GetFullName
+        nameWithType: Person.GetFullName
+        qualifiedName: GenericSort.Person.GetFullName
+      VB:
+      - id: GenericSort.Person.GetFullName*
+        name: GetFullName
+        nameWithType: Person.GetFullName
+        qualifiedName: GenericSort.Person.GetFullName
+    isDefinition: true
+    commentId: Overload:GenericSort.Person.GetFullName
+  GenericSort.Person.GetId*:
+    name:
+      CSharp:
+      - id: GenericSort.Person.GetId*
+        name: GetId
+        nameWithType: Person.GetId
+        qualifiedName: GenericSort.Person.GetId
+      VB:
+      - id: GenericSort.Person.GetId*
+        name: GetId
+        nameWithType: Person.GetId
+        qualifiedName: GenericSort.Person.GetId
+    isDefinition: true
+    commentId: Overload:GenericSort.Person.GetId
+  GenericSort.Person.GetNumberOfPersons*:
+    name:
+      CSharp:
+      - id: GenericSort.Person.GetNumberOfPersons*
+        name: GetNumberOfPersons
+        nameWithType: Person.GetNumberOfPersons
+        qualifiedName: GenericSort.Person.GetNumberOfPersons
+      VB:
+      - id: GenericSort.Person.GetNumberOfPersons*
+        name: GetNumberOfPersons
+        nameWithType: Person.GetNumberOfPersons
+        qualifiedName: GenericSort.Person.GetNumberOfPersons
+    isDefinition: true
+    commentId: Overload:GenericSort.Person.GetNumberOfPersons
+  GenericSort.Person:
+    name:
+      CSharp:
+      - id: GenericSort.Person
+        name: Person
+        nameWithType: Person
+        qualifiedName: GenericSort.Person
+      VB:
+      - id: GenericSort.Person
+        name: Person
+        nameWithType: Person
+        qualifiedName: GenericSort.Person
+    isDefinition: true
+    parent: GenericSort
+    commentId: T:GenericSort.Person
+  GenericSort.Person.AddParents*:
+    name:
+      CSharp:
+      - id: GenericSort.Person.AddParents*
+        name: AddParents
+        nameWithType: Person.AddParents
+        qualifiedName: GenericSort.Person.AddParents
+      VB:
+      - id: GenericSort.Person.AddParents*
+        name: AddParents
+        nameWithType: Person.AddParents
+        qualifiedName: GenericSort.Person.AddParents
+    isDefinition: true
+    commentId: Overload:GenericSort.Person.AddParents
+  GenericSort.Person.GetFathersName*:
+    name:
+      CSharp:
+      - id: GenericSort.Person.GetFathersName*
+        name: GetFathersName
+        nameWithType: Person.GetFathersName
+        qualifiedName: GenericSort.Person.GetFathersName
+      VB:
+      - id: GenericSort.Person.GetFathersName*
+        name: GetFathersName
+        nameWithType: Person.GetFathersName
+        qualifiedName: GenericSort.Person.GetFathersName
+    isDefinition: true
+    commentId: Overload:GenericSort.Person.GetFathersName
+  GenericSort.Person.GetMothersName*:
+    name:
+      CSharp:
+      - id: GenericSort.Person.GetMothersName*
+        name: GetMothersName
+        nameWithType: Person.GetMothersName
+        qualifiedName: GenericSort.Person.GetMothersName
+      VB:
+      - id: GenericSort.Person.GetMothersName*
+        name: GetMothersName
+        nameWithType: Person.GetMothersName
+        qualifiedName: GenericSort.Person.GetMothersName
+    isDefinition: true
+    commentId: Overload:GenericSort.Person.GetMothersName
+  GenericSort.Person.CompareTo*:
+    name:
+      CSharp:
+      - id: GenericSort.Person.CompareTo*
+        name: CompareTo
+        nameWithType: Person.CompareTo
+        qualifiedName: GenericSort.Person.CompareTo
+      VB:
+      - id: GenericSort.Person.CompareTo*
+        name: CompareTo
+        nameWithType: Person.CompareTo
+        qualifiedName: GenericSort.Person.CompareTo
+    isDefinition: true
+    commentId: Overload:GenericSort.Person.CompareTo
+  System.IComparable.CompareTo(System.Object):
+    name:
+      CSharp:
+      - id: System.IComparable.CompareTo(System.Object)
+        name: CompareTo
+        nameWithType: IComparable.CompareTo
+        qualifiedName: System.IComparable.CompareTo
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - id: System.Object
+        name: Object
+        nameWithType: Object
+        qualifiedName: System.Object
+        isExternal: true
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+      VB:
+      - id: System.IComparable.CompareTo(System.Object)
+        name: CompareTo
+        nameWithType: IComparable.CompareTo
+        qualifiedName: System.IComparable.CompareTo
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - id: System.Object
+        name: Object
+        nameWithType: Object
+        qualifiedName: System.Object
+        isExternal: true
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: true
+    parent: System.IComparable
+    commentId: M:System.IComparable.CompareTo(System.Object)
+  System.ValueType:
+    name:
+      CSharp:
+      - id: System.ValueType
+        name: ValueType
+        nameWithType: ValueType
+        qualifiedName: System.ValueType
+        isExternal: true
+      VB:
+      - id: System.ValueType
+        name: ValueType
+        nameWithType: ValueType
+        qualifiedName: System.ValueType
+        isExternal: true
+    isDefinition: true
+    parent: System
+    commentId: T:System.ValueType
+  System.ValueType.Equals(System.Object):
+    name:
+      CSharp:
+      - id: System.ValueType.Equals(System.Object)
+        name: Equals
+        nameWithType: ValueType.Equals
+        qualifiedName: System.ValueType.Equals
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - id: System.Object
+        name: Object
+        nameWithType: Object
+        qualifiedName: System.Object
+        isExternal: true
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+      VB:
+      - id: System.ValueType.Equals(System.Object)
+        name: Equals
+        nameWithType: ValueType.Equals
+        qualifiedName: System.ValueType.Equals
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - id: System.Object
+        name: Object
+        nameWithType: Object
+        qualifiedName: System.Object
+        isExternal: true
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: true
+    parent: System.ValueType
+    commentId: M:System.ValueType.Equals(System.Object)
+  System.ValueType.GetHashCode:
+    name:
+      CSharp:
+      - id: System.ValueType.GetHashCode
+        name: GetHashCode
+        nameWithType: ValueType.GetHashCode
+        qualifiedName: System.ValueType.GetHashCode
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+      VB:
+      - id: System.ValueType.GetHashCode
+        name: GetHashCode
+        nameWithType: ValueType.GetHashCode
+        qualifiedName: System.ValueType.GetHashCode
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: true
+    parent: System.ValueType
+    commentId: M:System.ValueType.GetHashCode
+  System.ValueType.ToString:
+    name:
+      CSharp:
+      - id: System.ValueType.ToString
+        name: ToString
+        nameWithType: ValueType.ToString
+        qualifiedName: System.ValueType.ToString
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+      VB:
+      - id: System.ValueType.ToString
+        name: ToString
+        nameWithType: ValueType.ToString
+        qualifiedName: System.ValueType.ToString
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: true
+    parent: System.ValueType
+    commentId: M:System.ValueType.ToString
+  GenericSort.Parents.#ctor*:
+    name:
+      CSharp:
+      - id: GenericSort.Parents.#ctor*
+        name: Parents
+        nameWithType: Parents.Parents
+        qualifiedName: GenericSort.Parents.Parents
+      VB:
+      - id: GenericSort.Parents.#ctor*
+        name: Parents
+        nameWithType: Parents.Parents
+        qualifiedName: GenericSort.Parents.Parents
+    isDefinition: true
+    commentId: Overload:GenericSort.Parents.#ctor
+  GenericSort.Parents.Father*:
+    name:
+      CSharp:
+      - id: GenericSort.Parents.Father*
+        name: Father
+        nameWithType: Parents.Father
+        qualifiedName: GenericSort.Parents.Father
+      VB:
+      - id: GenericSort.Parents.Father*
+        name: Father
+        nameWithType: Parents.Father
+        qualifiedName: GenericSort.Parents.Father
+    isDefinition: true
+    commentId: Overload:GenericSort.Parents.Father
+  GenericSort.Parents.Mother*:
+    name:
+      CSharp:
+      - id: GenericSort.Parents.Mother*
+        name: Mother
+        nameWithType: Parents.Mother
+        qualifiedName: GenericSort.Parents.Mother
+      VB:
+      - id: GenericSort.Parents.Mother*
+        name: Mother
+        nameWithType: Parents.Mother
+        qualifiedName: GenericSort.Parents.Mother
+    isDefinition: true
+    commentId: Overload:GenericSort.Parents.Mother
